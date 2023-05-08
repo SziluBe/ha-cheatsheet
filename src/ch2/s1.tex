@@ -1,0 +1,22 @@
+\wde{2.1 Pointwise convergence}
+Seq. of func.'s $f_n: E \to \R$ conv. pointwise to $f: E \to \R$ iff $\forall x \in E$,
+$\exists \lim_{n \to \infty} f_n(x) = f(x)$.
+Also: iff $\forall \epsilon > 0, \forall x \in E, \exists N \in \N$ s.t.
+$n \ge N \Rightarrow |f_n(x) - f(x)| < \epsilon$.
+Remark: continuity, integrability, differentiability may not be preserved.
+Even if they are, their values may not be preserved.
+\wde{2.2 Uniform convergence}
+Seq. of func.'s $f_n: E \to \R$ conv. uniformly to $f: E \to \R$ iff
+$\forall \epsilon > 0, \exists N \in \N$ s.t.
+$\forall x\in E:\, n \ge N \Rightarrow |f_n(x) - f(x)| < \epsilon$.
+\wpr{2.1} Equivalent statements for seq. $f_n: E \to \R$, $f: E \to \R$:
+(1) $f_n \to f$ uniformly.
+(2) $\sup_{x \in E} |f_n(x) - f(x)| \to 0$.
+(3) $\exists (a_n) \to 0$ s.t. $\forall x \in E, \forall n \in \N$: $|f_n(x) - f(x)| \le a_n$.
+\wt{2.1} Unif. conv. preserves continuity. (Each $f_n$ cont. $\Rightarrow$ $f$ cont.)
+\wt{2.2} $f_n \to f$ unif. on $[a,b]$, if each $f_n$ integrable on $[a,b]$,
+then $f$ integrable on $[a,b]$ and $\int_a^b f = \lim_{n \to \infty} \int_a^b f_n$.
+In fact $\int_a^x f(t) dt = \lim_{n \to \infty} \int_a^x f_n(t) dt$.
+\wt{2.3} Let $(a,b)$ bdd. int., $(f_n)$ conv. at some $x_0 \in (a,b)$.
+If each $f_n$ diff. on $(a,b)$, and $f_n'$ conv. unif. on $(a,b)$, then
+$f_n \to f$ unif. on $(a,b)$, where $f$ is diff. on $(a,b)$ and $f' = \lim_{n \to \infty} f_n'$.
