@@ -1,0 +1,25 @@
+\wde{1.7 Continuity} Let $f: E \to \R$ where $E \subseteq \R$.
+$f$ is continuous at $x_0 \in E$ iff $\forall (x_n) \to x_0$ in $E$,
+$(f(x_n)) \to f(x_0)$.
+$f$ is continuous on $E$ iff $f$ is continuous at every $x_0 \in E$.
+\wt{1.10} $f,g: D \to \R$ cont. on $D$, $\alpha \in \R$.
+Then $f+g$, $f-g$, $\alpha f$, $fg$, $f/g$ (if $g \neq 0$) are cont. on $D$.
+% \wde{1.8 Function composition}
+\wt{1.11} $f$ cont. at $a \in \R$, $g$ cont. at $f(a)$.
+Then $g \circ f$ cont. at $a$.
+\wt{1.12 $\epsilon-\delta$ definition of continuity.}
+$f: E \to \R$ cont. at $x_0 \in E$ iff $\forall \epsilon > 0, \exists \delta > 0$ s.t.
+$|x - x_0| < \delta \Rightarrow |f(x) - f(x_0)| < \epsilon$.
+\wt{1.13 IVT} Let $a<b \in \R$, $f: [a,b] \to \R$ cont. on $[a,b]$.
+If $f(a)f(b) < 0$, then $\exists c \in (a,b)$ s.t. $f(c) = 0$.
+\wt{1.14 EVT} Let $a<b \in \R$, $f: [a,b] \to \R$ cont. on $[a,b]$.
+Then $\exists c,d \in [a,b]$ s.t.
+$f(c) = \inf_{x \in [a,b]} f(x)$, $f(d) = \sup_{x \in [a,b]} f(x)$.
+\wde{Differentiability} Let $f: E \to \R$ where $E \subseteq \R$.
+$f$ is differentiable at $x_0 \in E$ iff
+$\lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}$ exists.
+$f$ is differentiable on $E$ iff $f$ is differentiable at every $x_0 \in E$.
+\wde{Uniform continuity} Let $f: E \to \R$ where $E \subseteq \R$.
+$f$ is uniformly continuous on $E$ iff
+$\forall \epsilon > 0, \exists \delta > 0$ s.t.
+$\forall x,y \in E, |x - y| < \delta \Rightarrow |f(x) - f(y)| < \epsilon$.
