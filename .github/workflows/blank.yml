@@ -15,7 +15,6 @@ jobs:
         with:
           root_file: |
             main.tex
-            # exercises.tex
           post_compile: "latexmk -c"
           
       - name: Release
@@ -24,4 +23,3 @@ jobs:
           tag_name: latest
           files: |
             main.pdf
-            # exercises.pdf
